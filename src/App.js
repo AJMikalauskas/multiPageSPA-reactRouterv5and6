@@ -10,6 +10,9 @@ function App() {
     <div>
       <MainHeader />
       <main>
+        {/*  Changes <Switch></Switch> to <Routes></Routes> for react router v6.
+             Don't send in component between <Route> tags anymore, rather, pass into element
+             property as dynamic, No pointer, pass in full component tag*/}
         <Routes>
           <Route path='/welcome' element={<Welcome />} />
           <Route path='/products' element={<Products />} />
